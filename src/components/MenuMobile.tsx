@@ -3,7 +3,6 @@ import { AnimatePresence, motion, spring } from 'motion/react';
 import { routes } from '../routes';
 import { Squash as Hamburger } from 'hamburger-react';
 import { useClickAway } from 'react-use';
-import { div } from 'motion/react-client';
 
 export const MenuMobile = () => {
   const [isOpen, setOpen] = useState<boolean>(false);
