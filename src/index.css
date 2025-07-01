@@ -45,4 +45,12 @@
   .text-preset-7 {
     @apply text-[14px] leading-[24px] font-bold tracking-[4.38px];
   }
+
+  .menu-item {
+    @apply text-navy-600 transition-all duration-150;
+  }
+
+  .menu-item:hover {
+    @apply text-red-500;
+  }
 }
