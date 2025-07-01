@@ -16,3 +16,33 @@
   font-weight: 100-900;
   src: url('/fonts/Inter-VariableFont_slnt,wght.ttf');
 }
+
+@layer components {
+  .text-preset-1 {
+    @apply text-[56px] leading-[56px] font-extrabold;
+  }
+
+  .text-preset-2 {
+    @apply text-[40px] leading-[40px] font-extrabold;
+  }
+
+  .text-preset-3 {
+    @apply text-[32px] leading-[32px] font-bold;
+  }
+
+  .text-preset-4 {
+    @apply text-[20px] leading-[24px] font-extrabold;
+  }
+
+  .text-preset-5 {
+    @apply text-[18px] leading-[24px] font-extrabold;
+  }
+
+  .text-preset-6 {
+    @apply text-[15px] leading-[26px] font-normal;
+  }
+
+  .text-preset-7 {
+    @apply text-[14px] leading-[24px] font-bold tracking-[4.38px];
+  }
+}
