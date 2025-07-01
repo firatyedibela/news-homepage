@@ -1,8 +1,18 @@
+import { MenuDesktop } from './components/MenuDesktop';
+import { MenuMobile } from './components/MenuMobile';
+import wIcon from './assets/images/w.svg';
+
 function App() {
   return (
-    <h1 className="w-20 h-20 bg-red-500 font-display">
-      24px Line Height 0 px Letter Spacing Regular
-    </h1>
+    <div id="container" className="min-h-screen px-4 pt-7 ">
+      <header className="max-w-[1112px] m-auto">
+        <nav className="flex justify-between items-center h-[28px]">
+          <img className="w-[45px] h-[28px]" src={wIcon} alt="" />
+          <MenuDesktop />
+          <MenuMobile />
+        </nav>
+      </header>
+    </div>
   );
 }
 
