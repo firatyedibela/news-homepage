@@ -15,6 +15,7 @@ function App() {
           <MenuMobile />
         </nav>
       </header>
+      <main className="max-w-[1112px] m-auto"></main>
     </div>
   );
 }
