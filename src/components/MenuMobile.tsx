@@ -1,28 +1,23 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { AnimatePresence, motion, spring } from 'motion/react';
 import { routes } from '../routes';
 import { Squash as Hamburger } from 'hamburger-react';
-import { useClickAway } from 'react-use';
 
 export const MenuMobile = () => {
   const [isOpen, setOpen] = useState<boolean>(false);
-  const ref = useRef(null);
-
-  useClickAway(ref, () => {
-    setOpen(false);
-  });
 
   return (
-    <div ref={ref} className="lg:hidden">
+    <div className="lg:hidden">
       {/* Backdrop */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            onClick={() => setOpen(false)}
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.5 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 bg-navy-950 opacity-50 -z-1"
+            className="fixed inset-0 bg-navy-950 opacity-50 z-5"
           ></motion.div>
         )}
       </AnimatePresence>
@@ -38,7 +33,7 @@ export const MenuMobile = () => {
             animate={{ opacity: 1, right: 0 }}
             exit={{ opacity: 0, right: '-60%' }}
             transition={{ duration: 0.2 }}
-            className="w-[256px] md:w-[312px] p-4 md:p-9 fixed right-0 top-0 bottom-0 bg-white opacity-100"
+            className="w-[256px] md:w-[312px] p-4 md:p-9 fixed right-0 top-0 bottom-0 bg-white opacity-100 z-6"
           >
             <ul className="grid gap-6 mt-[145px]">
               {routes.map((route, idx) => (
