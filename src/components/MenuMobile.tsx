@@ -34,9 +34,9 @@ export const MenuMobile = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0, right: '-60%' }}
+            animate={{ opacity: 1, right: 0 }}
+            exit={{ opacity: 0, right: '-60%' }}
             transition={{ duration: 0.2 }}
             className="w-[256px] md:w-[312px] p-4 md:p-9 fixed right-0 top-0 bottom-0 bg-white opacity-100"
           >
