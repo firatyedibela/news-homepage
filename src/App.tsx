@@ -12,7 +12,10 @@ import web3Desktop from './assets/images/image-web-3-desktop.jpg';
 
 function App() {
   return (
-    <div id="container" className="min-h-screen px-4 pt-7 pb-16 font-display">
+    <div
+      id="container"
+      className="min-h-screen px-4 sm:px-20 pt-7 pb-16 font-display"
+    >
       <header className="max-w-[1112px] m-auto mb-8">
         <nav className="flex justify-between items-center h-[28px]">
           <img className="w-[45px] h-[28px]" src={wIcon} alt="" />
@@ -24,7 +27,11 @@ function App() {
         <section className="grid gap-6">
           <picture>
             <source media="(max-width: 465px)" srcSet={web3Mobile} />
-            <img src={web3Desktop} alt="" />
+            <img
+              className="w-full md:h-[300px] object-cover"
+              src={web3Desktop}
+              alt=""
+            />
           </picture>
           <h1 className="text-preset-2">The Bright Future of Web 3.0?</h1>
           <p className="text-preset-6 text-navy-600">
