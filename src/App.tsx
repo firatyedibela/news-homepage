@@ -52,7 +52,7 @@ function App() {
             href="#"
           />
           <Article
-            image={retroPc}
+            image={gamingGrowth}
             altText="Image of a gamepad on top of a palm of a hand"
             prefix="03"
             title="The Growth of Gaming"
