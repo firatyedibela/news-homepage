@@ -54,3 +54,23 @@
     @apply text-red-500;
   }
 }
+
+div.hamburger-react {
+  height: 30px !important;
+  width: 30px !important;
+}
+
+div.hamburger-react > div > div {
+  left: 0 !important;
+}
+div.hamburger-react > div:nth-child(1) > div {
+  top: 1px !important;
+}
+
+div.hamburger-react > div:nth-child(2) > div {
+  top: 11px !important;
+}
+
+div.hamburger-react > div:nth-child(3) > div {
+  top: 21px !important;
+}
