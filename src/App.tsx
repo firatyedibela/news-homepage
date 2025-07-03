@@ -1,6 +1,7 @@
 import { MenuDesktop } from './components/MenuDesktop';
 import { MenuMobile } from './components/MenuMobile';
 import { Button } from './components/Button';
+import { ArticleCard } from './components/ArticleCard';
 import wIcon from './assets/images/w.svg';
 import retroPc from './assets/images/image-retro-pcs.jpg';
 import topLaptop from './assets/images/image-top-laptops.jpg';
@@ -28,6 +29,9 @@ function App() {
             really fulfilling its promise?
           </p>
           <Button className="max-w-max">read more</Button>
+        </section>
+        <section>
+          <ArticleCard />
         </section>
       </main>
     </div>
