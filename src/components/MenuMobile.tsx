@@ -23,7 +23,7 @@ export const MenuMobile = () => {
       </AnimatePresence>
 
       <div className="z-10 relative">
-        <Hamburger size={30} toggled={isOpen} toggle={setOpen} />
+        <Hamburger size={30} toggle={setOpen} toggled={isOpen} />
       </div>
 
       <AnimatePresence>
