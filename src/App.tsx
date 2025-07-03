@@ -22,7 +22,10 @@ function App() {
       </header>
       <main className="max-w-[1112px] m-auto grid gap-16">
         <section className="grid gap-6">
-          <img src={web3Mobile} alt="" aria-hidden="true" />
+          <picture>
+            <source media="(max-width: 465px)" srcSet={web3Mobile} />
+            <img src={web3Desktop} alt="" />
+          </picture>
           <h1 className="text-preset-2">The Bright Future of Web 3.0?</h1>
           <p className="text-preset-6 text-navy-600">
             We dive into the next evolution of the web that claims to put the
