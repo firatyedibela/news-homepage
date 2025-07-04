@@ -1,6 +1,6 @@
 import { MenuDesktop } from './components/MenuDesktop';
 import { MenuMobile } from './components/MenuMobile';
-import { Button } from './components/Button';
+import { Link } from './components/Link';
 import { ArticleCard } from './components/ArticleCard';
 import { Article } from './components/Article';
 import wIcon from './assets/images/w.svg';
@@ -43,7 +43,12 @@ function App() {
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
-              <Button className="max-w-max">read more</Button>
+              <Link
+                href="#"
+                className="max-w-max max-h-[48px] px-8 py-3 text-preset-7 uppercase bg-red-500 hover:bg-navy-950 text-navy-950 hover:text-white transition duration-150 cursor-pointer"
+              >
+                read more
+              </Link>
             </div>
           </div>
         </section>
