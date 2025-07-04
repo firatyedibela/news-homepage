@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { AnimatePresence, motion, spring } from 'motion/react';
 import { routes } from '../routes';
 import { Squash as Hamburger } from 'hamburger-react';
+import { Link } from './Link';
 
 export const MenuMobile = () => {
   const [isOpen, setOpen] = useState<boolean>(false);
@@ -48,14 +49,14 @@ export const MenuMobile = () => {
                   }}
                   id="mobile-menu-item"
                   key={route.title}
+                  onClick={() => setOpen((prev) => !prev)}
                 >
-                  <a
-                    onClick={() => setOpen((prev) => !prev)}
+                  <Link
                     className="capitalize text-lg leading-[24px] text-navy-950"
                     href={route.href}
                   >
                     {route.title}
-                  </a>
+                  </Link>
                 </motion.li>
               ))}
             </ul>
