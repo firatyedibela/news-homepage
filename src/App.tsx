@@ -14,11 +14,15 @@ function App() {
   return (
     <div
       id="container"
-      className="min-h-screen px-4 sm:px-20 pt-7 pb-16 font-display"
+      className="min-h-screen px-4 sm:px-20 pt-7 lg:pt-22 pb-16 font-display"
     >
-      <header className="max-w-[1112px] m-auto mb-8">
+      <header className="max-w-[1112px] m-auto mb-8 lg:mb-16">
         <nav className="flex justify-between items-center h-[28px]">
-          <img className="w-[45px] h-[28px]" src={wIcon} alt="" />
+          <img
+            className="w-[45px] h-[28px] lg:w-[64px] lg:h-[40px]"
+            src={wIcon}
+            alt=""
+          />
           <MenuDesktop />
           <MenuMobile />
         </nav>
