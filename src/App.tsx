@@ -23,7 +23,7 @@ function App() {
           <MenuMobile />
         </nav>
       </header>
-      <main className="max-w-[1112px] m-auto grid gap-16">
+      <main className="max-w-[1112px] m-auto grid gap-16 lg:grid-cols-[1fr_350px] lg:gap-8">
         <section className="grid gap-6">
           <picture>
             <source media="(max-width: 465px)" srcSet={web3Mobile} />
@@ -33,18 +33,24 @@ function App() {
               alt=""
             />
           </picture>
-          <h1 className="text-preset-2">The Bright Future of Web 3.0?</h1>
-          <p className="text-preset-6 text-navy-600">
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <Button className="max-w-max">read more</Button>
+          <div className="grid gap-6 xl:grid-cols-2 xl:gap-8">
+            <h1 className="text-preset-2 xl:text-[56px] xl:leading-[56px]">
+              The Bright Future of Web 3.0?
+            </h1>
+            <div className="grid gap-6">
+              <p className="text-preset-6 text-navy-600">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <Button className="max-w-max">read more</Button>
+            </div>
+          </div>
         </section>
         <section>
           <ArticleCard />
         </section>
-        <section className="grid gap-8">
+        <section className="grid gap-8 lg:col-span-2 lg:grid-cols-[repeat(auto-fit,_minmax(343px,_1fr))] lg:mt-8">
           <Article
             image={retroPc}
             altText="Image of a retro pc"

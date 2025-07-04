@@ -1,6 +1,6 @@
 export const ArticleCard = () => {
   return (
-    <div className="bg-navy-950 px-6 md:px-[42px] py-[21.5px] md:py-8 flex flex-col gap-8">
+    <div className="bg-navy-950 px-6 md:px-[42px] py-[21.5px] md:py-8 flex flex-col gap-8 lg:px-6 lg:py-8">
       <h2 className="text-preset-3 md:text-[40px] md:leading-[40px] text-gold-400">
         New
       </h2>
